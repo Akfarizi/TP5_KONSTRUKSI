@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace tpmodul5_103022300078
 {
-    class DataGeneric
+    public class DataGeneric<X>
     {
+        private X data;
+
+        public DataGeneric(X data)
+        {
+            this.data = data;
+        }
+
+        public void PrintData()
+        {
+            Console.WriteLine("Data yang tersimpan adalah: " + data);
+        }
     }
+
 }
